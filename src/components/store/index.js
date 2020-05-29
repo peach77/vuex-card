@@ -21,17 +21,16 @@ const store = new Vuex.Store({
     inventory:4
 }],
 cart:{
-    productIdInCart:[2,3],
+    productIdInCart:[1],
     numById:{
-        1:10,
+        2:10,
         3:5
     }
 }
   },
   getters:{
       list(state){   
-        return state.cart.productIdInCart.map(id=>state.products.find(res=>res.id===id))
-       
+        return state.cart.productIdInCart.map(id=>state.products.find(res=>res.id===id))  
       }
   },
   mutations:{

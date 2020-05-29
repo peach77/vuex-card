@@ -12,6 +12,10 @@ export default {
     components:{
         CartItem
     },
+    created () {
+        console.log(this.list);
+        
+    },
     computed:{
           list(){
            return this.$store.getters.list
