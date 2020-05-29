@@ -21,7 +21,7 @@ const store = new Vuex.Store({
     inventory:4
 }],
 cart:{
-    productIdInCart:[2],
+    productIdInCart:[2,3],
     numById:{
         1:10,
         3:5
